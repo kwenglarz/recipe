@@ -168,17 +168,17 @@ li a {
     background-color: #F2F2F2;
     text-align: center;
 }
-.menu-options li a {
+.nav-bar li a {
     background-color: white;
 }
-.menu-options li a:hover {
+.nav-bar li a:hover {
     background-color: #EB5428;
     color: #F2F2F2;
     transition-property: background-color, color;
     transition-duration: 1s;
     transition-timing-function: ease;
 }
-.menu-options li a:focus {
+.nav-bar li a:focus {
     outline: solid 2px #EB5428;
 }
 #site-search:focus {
@@ -573,9 +573,6 @@ label[for="dropdown"] {
         display: grid;
         grid-template-columns: 1fr;
     }
-    .menu-options {
-        width: 768px;
-    }
 }
 
 @media screen and (min-width: 768px) {
@@ -750,14 +747,16 @@ label[for="dropdown"] {
     }
     .nav-bar {
         grid-column: 1/6;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
     .account {
         grid-column: 6;
     }
-    .nav-bar ul {
+    /* .nav-bar ul {
         display: grid;
         grid-template-columns: 1fr 6fr;
-    } 
+    }  */
     .logo {
         height: 60px;
         width: 60px;
